@@ -22,8 +22,9 @@ nav {
   background-color: #070708;
   border-bottom: 2px solid #1c1c21;
   width: 100%;
-  position: static;
+  position: sticky;
   top: 0;
+  z-index: 10;
   height: 100%;
 }
 /* nav container start  */
@@ -88,7 +89,7 @@ nav {
 .hero-text {
   display: flex;
   justify-content: space-between;
-  margin: 3% 5%;
+  margin: 3% 8%;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -100,6 +101,7 @@ nav {
 .left-text h1 {
   font-size: 45px;
   font-weight: 500;
+  padding-right: 50px;
 }
 .left-text p {
   font-size: 16px;
@@ -142,6 +144,7 @@ nav {
   animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  cursor: pointer;
 }
 .item img {
   width: 25px;
@@ -174,4 +177,159 @@ nav {
 }
 .item-7 {
   animation-delay: calc(20s / 7 * (7 - 7) * -1);
+}
+/* about section start  */
+.about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10% 8%;
+  gap: 50px;
+}
+/* about text start  */
+.about-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #161619;
+}
+.about-text .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-text .text p {
+  color: #62646c;
+  font-size: 16px;
+}
+.about-text .text h1 {
+  font-size: 45px;
+  font-weight: 500;
+  padding-right: 50px;
+}
+.about-text .button {
+  padding-bottom: 20px;
+}
+.about-text .button button {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #070708;
+  border: 2px solid #1c1c21;
+  cursor: pointer;
+}
+.about-text .button button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.about-text .button button:hover {
+  background-color: #161619;
+}
+/* about main container start  */
+.about-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* image start  */
+.about-main .image img {
+  width: 90%;
+  margin-right: 0;
+}
+/* sub container start  */
+.sub-cont {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #161619;
+
+  border-radius: 25px;
+}
+/* introduction & information start  */
+.introduction {
+  border-bottom: 2px solid #161619;
+}
+.introduction,
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+}
+.title {
+  display: flex;
+  gap: 20px;
+}
+.title img {
+  width: 25px;
+  height: 100%;
+}
+.title h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.introduction .desc p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #62646c;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.email,
+.phone {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+.email h1,
+.phone h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.email p,
+.phone p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #62646c;
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.main-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.button-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.button-btn a {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #1c1c21;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid #1c1c21;
+}
+.button-btn a:hover {
+  background-color: #070708;
+  border: 2px solid #161619;
 }
