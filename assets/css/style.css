@@ -409,10 +409,10 @@ nav {
 }
 /* services container start  */
 .ser-cont {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   padding: 5% 0;
-  justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
@@ -421,7 +421,7 @@ nav {
 .ser-text-cont {
   display: flex;
   flex-direction: column;
-  width: 45%;
+
   gap: 30px;
 }
 .ser-title-cont {
@@ -472,6 +472,117 @@ nav {
 
 /* services image container start  */
 .ser-img-cont img {
-  max-width: 600px;
   width: 100%;
+}
+/* work section start  */
+.work {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 6% 8%;
+}
+/* work text start  */
+.work-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 3%;
+  border-bottom: 2px solid #1c1c21;
+}
+/* work title start  */
+.work-title {
+  display: flex;
+  flex-direction: column;
+}
+.work-title h1 {
+  font-size: 45px;
+  font-weight: 500;
+  padding-right: 20px;
+}
+.work-title P {
+  color: #62646c;
+  font-size: 18px;
+}
+/* work info start  */
+.work-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* work button start  */
+.work-btn a {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #1c1c21;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid #1c1c21;
+}
+.work-btn a:hover {
+  background-color: #070708;
+  border: 2px solid #161619;
+}
+/* work main container start  */
+.work-main-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 5% 0;
+  width: 100%;
+  align-items: center;
+}
+/* work bpx start  */
+.work-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.work-image img {
+  width: 100%;
+}
+/* work box text start  */
+.work-box-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.work-left-text  {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 2%;
+  flex-direction: column;
+}
+.work-left-text h1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #cacaca;
+}
+.work-left-text p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #797c86;
+}
+.work-right-text {
+  border-bottom: 1px solid #62646c;
+}
+.work-right-text a {
+  background-color: #070708;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #cacaca;
+  text-decoration: none;
+}
+.work-right-text a img {
+  width: 13px;
 }
