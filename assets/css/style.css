@@ -377,6 +377,7 @@ nav {
   border-radius: 50px;
   padding: 2px 10px;
   display: flex;
+  width: fit-content;
   justify-content: center;
   align-items: center;
 }
@@ -600,6 +601,8 @@ nav {
   flex-direction: column;
   gap: 2%;
   align-items: flex-start;
+  border-bottom: 1px solid #222;
+  padding-bottom: 20px;
 }
 /* faq subtitle start  */
 .faq-sub-title h4 {
@@ -651,10 +654,12 @@ nav {
 .left-faq-col {
   border-right: 1px solid #222;
   height: fit-content;
+  border-left: 2px solid #222;
 }
 .right-faq-col {
   border-left: 1px solid #222;
   height: fit-content;
+  border-right: 1px solid #222;
 }
 
 .faq-col summary::-webkit-details-marker {
@@ -723,4 +728,164 @@ details[open] .icon::after {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/* testimonial section start */
+.testimonial {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 6% 8%;
+}
+/* testimonial text start */
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  border-bottom: 1px solid #222;
+  padding: 30px 0;
+}
+/* testimonial titles start  */
+.testimonial-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* testimonial sub title start */
+.testimonial-sub-title h4 {
+  color: #62646c;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* testimonial main title start */
+.testimonial-main-title h1 {
+  font-size: 45px;
+  font-weight: 500;
+  padding-right: 20px;
+}
+/* testimonial review start */
+.testimonial-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+/* testimonial left review start p */
+.testimonial-left-review p {
+  color: #62646c;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* testimonial left review start h3  */
+.testimonial-left-review h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 20px;
+  color: #fff;
+}
+/* testimonial right review start */
+.testimonial-right-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/* testimonial button start  */
+.testimonial-btn a {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #1c1c21;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid #1c1c21;
+}
+.testimonial-btn a:hover {
+  background-color: #070708;
+  border: 2px solid #161619;
+}
+.arrow-2 {
+  gap: 5px;
+  padding: 2px 6px;
+  border: 1px solid #161619;
+}
+.arrow-2 img:hover {
+  background-color: #070708;
+  border: 1px solid #161619;
+}
+.arrow-2 img {
+  width: 100%;
+  padding: 5px;
+
+  border: 1px solid #1c1c21;
+}
+/* testimonial container start */
+.testimonial-cont {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 40px;
+}
+/* testimonial box start */
+.testimonial-box {
+  background-image: url(../images/Abstract\ Design.png);
+  padding: 15px 30px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0e0e10;
+  border: 1px solid #161619;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* testimonial box title start */
+.testimonial-box-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+/* testimonial box title left start */
+.testimonial-box-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonial-box-left h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+.testimonial-box-left p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #62646c;
+}
+/* testimonial icon start */
+
+.testimonial-box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  gap: 4px;
+}
+.testimonial-box-icon img {
+  width: 16px;
+}
+/* testimonial box paragraph start */
+.testimonial-box-paragraph p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
 }
