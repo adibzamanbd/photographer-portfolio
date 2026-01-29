@@ -1102,3 +1102,13 @@ details[open] .icon::after {
     transform: rotate(-45deg) translate(6px, -6px);
   }
 }
+
+/* about responsive  */
+@media (max-width: 992px) {
+  .about-main {
+    flex-direction: column;
+  }
+  .sub-cont {
+    width: 100%;
+  }
+}
