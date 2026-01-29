@@ -1112,3 +1112,11 @@ details[open] .icon::after {
     width: 100%;
   }
 }
+
+/* service responsive  */
+@media (max-width: 992px) {
+  .ser-cont {
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
