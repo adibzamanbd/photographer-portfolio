@@ -77,6 +77,25 @@ nav {
 .btn a:hover {
   background-color: #161619;
 }
+/* menu icon start  */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 20px;
+  height: 1px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* hide checkbox */
+#menu-toggle {
+  display: none;
+}
 /* hero section start  */
 .hero {
   width: 100%;
@@ -1021,4 +1040,65 @@ details[open] .icon::after {
   font-size: 16px;
   font-weight: 400;
   color: #2f2f37;
+}
+
+/* responsive start  */
+
+/* nav responsive  */
+@media (max-width: 992px) {
+  .menu-icon {
+    display: flex;
+  }
+  .nav-cont {
+    padding: 10px 10px;
+  }
+  .links {
+    position: fixed;
+    bottom: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    padding: 0;
+    background: #070708;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.4s ease;
+    border-right: 2px solid #1c1c21;
+    z-index: 9;
+    padding: 20px;
+  }
+  #first-active {
+    border-top-left-radius: 0;
+  }
+  #last-active {
+    border-top-right-radius: 0;
+  }
+  .links a {
+    width: 100%;
+    border: 1px solid #1c1c21;
+    border-radius: 0;
+    padding: 20px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  /* slide menu from left */
+  #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+
+  /* animate hamburger to X */
+  #menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 }
