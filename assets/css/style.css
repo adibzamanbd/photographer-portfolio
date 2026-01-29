@@ -1175,3 +1175,42 @@ details[open] .icon::after {
     text-align: center;
   }
 }
+
+/* footer responsive  */
+@media (max-width: 992px) {
+  .footer-top-title h1 {
+    font-size: 20vw;
+  }
+  .footer-inner-cont {
+    flex-direction: column;
+  }
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-bottom-cont {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 766px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 440px) {
+  .footer-links {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  .footer-col {
+    align-items: center;
+  }
+  .footer-bottom-col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+  }
+}
