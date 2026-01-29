@@ -1147,3 +1147,31 @@ details[open] .icon::after {
     gap: 0;
   }
 }
+/* testimonial responsive */
+@media (max-width: 992px) {
+  .testimonial-review {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .testimonial-cont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 440px) {
+  .testimonial-right-review {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .testimonial-box-title {
+    flex-direction: column;
+  }
+  .testimonial-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-box-paragraph p {
+    text-align: center;
+  }
+}
