@@ -4,76 +4,635 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photographer Portfolio</title>
-
+    <!-- shery js css cdn start  -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
     <!-- main css start  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
-    <!-- nav start  -->
-    <nav>
-      <!-- nav container start  -->
-      <div class="nav-cont">
-        <!-- logo start  -->
-         <div class="logo">
-          <h1>DAMIN</h1>
-        </div>
-
-        <!-- menu toggle -->
-        <input type="checkbox" id="menu-toggle">
-
-        <!-- menu icon -->
-        <label for="menu-toggle" class="menu-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-
-        <!-- links start  -->
-        <div class="links">
-          <a href="#" id="first-active">Home</a>
-          <a href="#">About Me</a>
-          <a href="#">Portfolio</a>
-          <a href="#" id="last-active">Services</a>
-        </div>
-
-        <!-- .button start  -->
-        <div class="btn">
-          <a href="#">Contact Me</a>
-        </div>
-
-      </div>
-    </nav>
-
-    <!-- main start  -->
-    <main>
-      <!-- hero section start  -->
-      <section class="hero">
-        <!-- text section start  -->
-        <div class="hero-text">
-          <!-- left text start  -->
-          <div class="left-text">
-            <p>STUNNING PHOTOGRAPHY BY</p>
-            <h1>DAMIEN BRAUN</h1>
+  <body oncontextmenu="return false;">
+     <!-- custom cursor  -->
+    <div id="cursor"></div>
+    <!-- main cursor container start  -->
+    <div class="main-cursor-cont">
+        <!-- nav start  -->
+        <nav>
+          <!-- nav container start  -->
+          <div class="nav-cont">
+            <!-- logo start  -->
+            <div class="logo">
+              <h1>DAMIN</h1>
+            </div>
+            <!-- menu toggle -->
+            <input type="checkbox" id="menu-toggle">
+            <!-- menu icon -->
+            <label for="menu-toggle" class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <!-- links start  -->
+            <div class="links">
+              <a href="#" id="first-active">Home</a>
+              <a href="#">About Me</a>
+              <a href="#">Portfolio</a>
+              <a href="#" id="last-active">Services</a>
+            </div>
+            <!-- .button start  -->
+            <div class="btn">
+              <a href="#">Contact Me</a>
+            </div>
           </div>
-          <!-- right text start  -->
-          <div class="right-text cta">
-            <h1>
-              LET’S
-              <span>
-                <button>
-                  <img src="./assets/images/icons/arrow.png" alt="" />
-                </button>
-              </span>
-              <br />
-              WORK TOGETHER
-            </h1>
-          </div>
-        </div>
+        </nav>
+        <!-- main start  -->
+        <main>
+          <!-- hero section start  -->
+          <section class="hero">
+            <!-- text section start  -->
+            <div class="hero-text">
+              <!-- left text start  -->
+              <div class="left-text">
+                <p>STUNNING PHOTOGRAPHY BY</p>
+                <h1>DAMIEN BRAUN</h1>
+              </div>
+              <!-- right text start  -->
+              <div class="right-text cta">
+                <h1>
+                  LET’S
+                  <span>
+                    <button class="button">
+                      <img src="./assets/images/icons/arrow.png" alt="" />
+                    </button>
+                  </span>
+                  <br />
+                  WORK TOGETHER
+                </h1>
+              </div>
+            </div>
+            <!-- image section start  -->
+            <div class="hero-img">
+              <div class="wrapper">
+                <div class="scroll-cont">
+                  <div class="item item-1">
+                    <img src="./assets/images/icons/rocket.png" alt="" />
+                    <p>COMERCIAL</p>
+                  </div>
+                  <div class="item item-2">
+                    <img src="./assets/images/icons/rocket.png" alt="" />
+                    <p>EVENT</p>
+                  </div>
+                  <div class="item item-3">
+                    <img src="./assets/images/icons/rocket.png" alt="" />
+                    <p>PRODUCT</p>
+                  </div>
+                  <div class="item item-4">
+                    <img src="./assets/images/icons/rocket.png" alt="" />
+                    <p>WEDDING</p>
+                  </div>
+                  <div class="item item-5">
+                    <img src="./assets/images/icons/rocket.png" alt="" />
+                    <p>LANDSCAPE</p>
+                  </div>
+                  <div class="item item-6">
+                    <img src="./assets/images/icons/rocket.png" alt="" />
+                    <p>BRANDING</p>
+                  </div>
+                  <div class="item item-7">
+                    <img src="./assets/images/icons/rocket.png" alt="" />
+                    <p>PORTRAIT</p>
+                  </div>
+                </div>
+              </div>
+              <img class="banner-img" src="./assets/images/hero.png" alt="" />
+            </div>
+          </section>
+          <!-- about section start  -->
+          <section class="about">
+            <!-- about text start  -->
+            <div class="about-text">
+              <div class="text">
+                <p>ABOUT</p>
+                <h1>I AM DAMIEN</h1>
+              </div>
+              <div class="button">
+                <button class="button"><a href="#">Know More -></a></button>
+              </div>
+            </div>
+            <!-- about main container start  -->
+            <div class="about-main">
+              <!-- image start  -->
+              <div class="image">
+                <img src="./assets/images/about.png" alt="" />
+              </div>
+              <!-- sub container start  -->
+              <div class="sub-cont">
+                <!-- introduce start  -->
+                <div class="introduction">
+                  <div class="title">
+                    <img src="./assets/images/icons/star.png" alt="" />
+                    <h1>Introduction</h1>
+                  </div>
+                  <div class="desc">
+                    <p>
+                      My journey as a photographer has been a lifelong quest to
+                      capture the extraordinary in the ordinary, to freeze fleeting
+                      moments in time, and to share the world's beauty as I see it.
+                      Based in the enchanting landscapes of the USA, I find
+                      inspiration in every corner of this diverse and vibrant
+                      country. Join me as we embark on a visual odyssey, where each
+                      photograph tells a story, and every frame is a piece of my
+                      heart.
+                    </p>
+                  </div>
+                </div>
+                <!-- information start  -->
+                <div class="information">
+                  <div class="title">
+                    <img src="./assets/images/icons/star.png" alt="" />
+                    <h1>Contact Information</h1>
+                  </div>
+                  <div class="info">
+                    <div class="email">
+                      <h1>Email</h1>
+                      <p>damienbraun@gmail.com</p>
+                    </div>
+                    <div class="phone">
+                      <h1>Phone Number</h1>
+                      <p>+00 000000000</p>
+                    </div>
+                  </div>
+                  <div class="link">
+                    <div class="main-link">
+                      <a href="#"
+                        ><img src="./assets/images/icons/facebook.png" alt=""
+                      /></a>
+                      <a href="#"
+                        ><img src="./assets/images/icons/twitter.png" alt=""
+                      /></a>
+                      <a href="#"
+                        ><img src="./assets/images/icons/linkedin.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="button-btn">
+                      <a href="#" class="button">Let’s Work</a>
+                      <a href="#" class="button">Download CV</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- services section start  -->
+          <section class="services">
+            <!-- services text start  -->
+            <div class="ser-text">
+              <!-- services title start  -->
+              <div class="ser-title">
+                <p>SERVICES</p>
+                <h1>MY PHOTOGRAPHY SERVICES</h1>
+              </div>
+              <!-- services extra start  -->
+              <div class="ser-extra">
+                <!-- servises arrow start  -->
+                <div class="arrow">
+                  <a href="#"
+                    ><img src="./assets/images/icons/arrow-left.png" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/icons/arrow-right.png" alt=""
+                  /></a>
+                </div>
+                <!-- services button start  -->
+                <div class="ser-btn">
+                  <a href="#" class="button">View All Services -></a>
+                </div>
+              </div>
+            </div>
+            <!-- services container start  -->
+            <div class="ser-cont">
+              <!-- services text container start  -->
+              <div class="ser-text-cont">
+                <!-- services title container start  -->
+                <div class="ser-title-cont">
+                  <h1>
+                    Events
+                    <span>
+                      <button>
+                        <img class="ser-img" src="./assets/images/icons/arrow.png" alt="" />
+                      </button>
+                    </span>
+                  </h1>
+                  <p>
+                    Our event photography service is dedicated to capturing the
+                    magic of your special occasions. Whether it's a wedding,
+                    corporate event, or milestone celebration, we're there to
+                    document every heartfelt moment. We blend into the background,
+                    ensuring natural and candid shots that reflect the emotions of
+                    the day.
+                  </p>
+                </div>
+                <!-- services sub container start  -->
+                <div class="ser-sub-cont">
+                  <h1>Service Highlights</h1>
+                  <div class="ser-box">
+                    <img src="./assets/images/icons/rocket-2.png" alt="" />
+                    <p>
+                      Coverage for weddings, parties, corporate functions, and more.
+                    </p>
+                  </div>
+                  <div class="ser-box">
+                    <img src="./assets/images/icons/rocket-2.png" alt="" />
+                    <p>Skilled photographers who know how to seize the moment.</p>
+                  </div>
+                  <div class="ser-box">
+                    <img src="./assets/images/icons/rocket-2.png" alt="" />
+                    <p>
+                      A mix of candid and posed shots for a comprehensive story.
+                    </p>
+                  </div>
+                  <div class="ser-box">
+                    <img src="./assets/images/icons/rocket-2.png" alt="" />
+                    <p>Quick turnaround for you to relive the day's highlights.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- services image container start  -->
+              <div class="ser-img-cont">
+                <img src="./assets/images/services.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <!-- work section start  -->
+          <section class="work">
+            <!-- work text start  -->
+            <div class="work-text">
+              <!-- work title start  -->
+              <div class="work-title">
+                <p>PORTFOLIO</p>
+                <h1>EXPLORE MY PHOTOGRAPHY WORK.</h1>
+              </div>
+              <!-- work info start  -->
+              <div class="work-info">
+                <!-- work arrow start  -->
+                <div class="arrow">
+                  <a href="#">
+                    <img src="./assets/images/icons/arrow-left.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/icons/arrow-right.png" alt="" />
+                  </a>
+                </div>
+                <!-- work button start  -->
+                <div class="work-btn">
+                  <a href="#" class="button">View All Works -></a>
+                </div>
+              </div>
+            </div>
+            <!-- work main container start  -->
+            <div class="work-main-cont">
+              <!-- work box start  -->
+              <div class="work-box">
+                <div class="work-image">
+                  <img src="./assets/images/works/work-1.png" alt="" />
+                </div>
+                <div class="work-box-text">
+                  <div class="work-left-text">
+                    <h1>Faces of Resilience</h1>
+                    <p>March 2022</p>
+                  </div>
+                  <div class="work-right-text">
+                    <a href="#" class="button"
+                      >View Project
+                      <img src="./assets/images/icons/arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- work box start  -->
+              <div class="work-box">
+                <div class="work-image">
+                  <img src="./assets/images/works/work-2.png" alt="" />
+                </div>
+                <div class="work-box-text">
+                  <div class="work-left-text">
+                    <h1>A Wedding Tale</h1>
+                    <p>January 2020</p>
+                  </div>
+                  <div class="work-right-text">
+                    <a href="#" class="button"
+                      >View Project
+                      <img src="./assets/images/icons/arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <!-- work box start  -->
+              <div class="work-box">
+                <div class="work-image">
+                  <img src="./assets/images/works/work-3.png" alt="" />
+                </div>
+                <div class="work-box-text">
+                  <div class="work-left-text">
+                    <h1>Product Elegance</h1>
+                    <p>January 2020</p>
+                  </div>
+                  <div class="work-right-text">
+                    <a href="#" class="button"
+                      >View Project
+                      <img src="./assets/images/icons/arrow.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- FAQ section start  -->
+          <section class="faq">
+            <!-- faq title start  -->
+            <div class="faq-title">
+              <!-- faq subtitle start  -->
+              <div class="faq-sub-title">
+                <h4>FAQ'S</h4>
+              </div>
+              <!-- faq main title start  -->
+              <div class="faq-main-title">
+                <h1>FREQUENTLY ASKED QUESTIONS</h1>
+              </div>
+            </div>
+            <!-- faq box container start  -->
+            <div class="faq-box-cont">
+              <div class="faq-grid">
+                <!-- Left column -->
+                <div class="faq-col left-faq-col">
+                  <details class="first-left-faq-details">
+                    <summary>
+                      WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZE IN?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      I specialize in Portrait, Landscape, Event, etc. photography,
+                      capturing moments that tell unique stories.
+                    </p>
+                  </details>
 
-        <!-- image section start  -->
-        <div class="hero-img">
-          <div class="wrapper">
-            <div class="scroll-cont">
+                  <details>
+                    <summary>
+                      HOW CAN I BOOK A PHOTOGRAPHY SESSION WITH YOU?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      You can book a session through the contact form on my website
+                      or by emailing me directly.
+                    </p>
+                  </details>
+
+                  <details>
+                    <summary>
+                      WHAT EQUIPMENT DO YOU USE FOR YOUR PHOTOGRAPHY?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      I use professional-grade cameras, lenses, and lighting
+                      equipment to ensure high-quality results.
+                    </p>
+                  </details>
+
+                  <details>
+                    <summary>
+                      CAN I REQUEST A SPECIFIC LOCATION FOR A SESSION?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      Absolutely! I’m happy to shoot at locations that are
+                      meaningful or visually appealing to you.
+                    </p>
+                  </details>
+                </div>
+
+                <!-- Right column -->
+                <div class="faq-col right-faq-col">
+                  <details class="right-faq-details">
+                    <summary>
+                      WHAT IS YOUR EDITING PROCESS LIKE?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      Each photo is carefully edited for color, lighting, and detail
+                      while keeping a natural look.
+                    </p>
+                  </details>
+
+                  <details>
+                    <summary>
+                      ARE DIGITAL FILES INCLUDED IN YOUR PHOTOGRAPHY PACKAGES?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      Yes, high-resolution digital files are included in most
+                      photography packages.
+                    </p>
+                  </details>
+
+                  <details>
+                    <summary>
+                      DO YOU OFFER PRINTS OF YOUR PHOTOGRAPHS?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      Yes, prints are available for purchase. Explore the Prints
+                      section for sizes and pricing.
+                    </p>
+                  </details>
+
+                  <details>
+                    <summary>
+                      HOW LONG DOES IT TAKE TO RECEIVE THE EDITED PHOTOS AFTER A
+                      SESSION?
+                      <span class="icon"></span>
+                    </summary>
+                    <p>
+                      Edited photos are typically delivered within 7–14 days after
+                      the session.
+                    </p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- testimonial section start  -->
+          <section class="testimonial">
+            <!-- testimonial text start  -->
+            <div class="testimonial-text">
+              <!-- testimonial titles start  -->
+              <div class="testimonial-titles">
+                <!-- testimonial sub title start  -->
+                <div class="testimonial-sub-title">
+                  <h4>TESTIMONIALS</h4>
+                </div>
+                <!-- testimonial main title start  -->
+                <div class="testimonial-main-title">
+                  <h1>WHAT MY CLIENTS SAY</h1>
+                </div>
+              </div>
+              <!-- testimonial review start  -->
+              <div class="testimonial-review">
+                <!-- testimonial left review start  -->
+                <div class="testimonial-left-review">
+                  <p>Total Reviews</p>
+                  <h3>323</h3>
+                </div>
+                <!-- testimonial right review start  -->
+                <div class="testimonial-right-review">
+                  <!-- testimonial arrow start  -->
+                  <div class="arrow">
+                    <a href="#">
+                      <img src="./assets/images/icons/arrow-left.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./assets/images/icons/arrow-right.png" alt="" />
+                    </a>
+                  </div>
+                  <!-- testimonial button start  -->
+                  <div class="testimonial-btn">
+                    <a href="#">View All Testimonials -></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial container start  -->
+            <div class="testimonial-cont">
+              <!-- testimonial box start  -->
+              <div class="testimonial-box">
+                <!-- testimonial box title start  -->
+                <div class="testimonial-box-title">
+                  <!-- testimonial box title left start  -->
+                  <div class="testimonial-box-left">
+                    <h3>Emily Johnson</h3>
+                    <p>USA, California</p>
+                  </div>
+                  <!-- testimonial box right start  -->
+                  <div class="testimonial-box-right">
+                    <div class="arrow arrow-2">
+                      <a href="#">
+                        <img src="./assets/images/icons/facebook.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/twitter.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/linkedin.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- testimonial icon start  -->
+                <div class="testimonial-box-icon">
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                </div>
+                <!-- testimonial box paragraph start  -->
+                <div class="testimonial-box-paragraph">
+                  <p>
+                    Damien's photography doesn't just capture moments; it captures
+                    emotions. Hes work is simply mesmerizing.
+                  </p>
+                </div>
+              </div>
+              <!-- testimonial box start  -->
+              <div class="testimonial-box">
+                <!-- testimonial box title start  -->
+                <div class="testimonial-box-title">
+                  <!-- testimonial box title left start  -->
+                  <div class="testimonial-box-left">
+                    <h3>Emily Johnson</h3>
+                    <p>USA, California</p>
+                  </div>
+                  <!-- testimonial box right start  -->
+                  <div class="testimonial-box-right">
+                    <div class="arrow arrow-2">
+                      <a href="#">
+                        <img src="./assets/images/icons/facebook.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/twitter.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/linkedin.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- testimonial icon start  -->
+                <div class="testimonial-box-icon">
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                </div>
+                <!-- testimonial box paragraph start  -->
+                <div class="testimonial-box-paragraph">
+                  <p>
+                    Damien's photography doesn't just capture moments; it captures
+                    emotions. Hes work is simply mesmerizing.
+                  </p>
+                </div>
+              </div>
+              <!-- testimonial box start  -->
+              <div class="testimonial-box">
+                <!-- testimonial box title start  -->
+                <div class="testimonial-box-title">
+                  <!-- testimonial box title left start  -->
+                  <div class="testimonial-box-left">
+                    <h3>Emily Johnson</h3>
+                    <p>USA, California</p>
+                  </div>
+                  <!-- testimonial box right start  -->
+                  <div class="testimonial-box-right">
+                    <div class="arrow arrow-2">
+                      <a href="#">
+                        <img src="./assets/images/icons/facebook.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/twitter.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/linkedin.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- testimonial icon start  -->
+                <div class="testimonial-box-icon">
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                  <img src="./assets/images/icons/Shape.png" alt="" />
+                </div>
+                <!-- testimonial box paragraph start  -->
+                <div class="testimonial-box-paragraph">
+                  <p>
+                    Damien's photography doesn't just capture moments; it captures
+                    emotions. Hes work is simply mesmerizing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- footer start  -->
+        <footer class="footer">
+          <!-- footer top start  -->
+          <div class="footer-top">
+            <!-- footer top title start  -->
+            <div class="footer-top-title">
+              <h1>DAMIEN</h1>
+            </div>
+            <!-- footer wrapper start  -->
+            <div class="wrapper">
               <div class="item item-1">
                 <img src="./assets/images/icons/rocket.png" alt="" />
                 <p>COMERCIAL</p>
@@ -104,662 +663,99 @@
               </div>
             </div>
           </div>
-          <img src="./assets/images/hero.png" alt="" />
-        </div>
-      </section>
-
-      <!-- about section start  -->
-      <section class="about">
-        <!-- about text start  -->
-        <div class="about-text">
-          <div class="text">
-            <p>ABOUT</p>
-            <h1>I AM DAMIEN</h1>
-          </div>
-          <div class="button">
-            <button><a href="#">Know More -></a></button>
-          </div>
-        </div>
-        <!-- about main container start  -->
-        <div class="about-main">
-          <!-- image start  -->
-          <div class="image">
-            <img src="./assets/images/about.png" alt="" />
-          </div>
-          <!-- sub container start  -->
-          <div class="sub-cont">
-            <!-- introduce start  -->
-            <div class="introduction">
-              <div class="title">
-                <img src="./assets/images/icons/star.png" alt="" />
-                <h1>Introduction</h1>
-              </div>
-              <div class="desc">
-                <p>
-                  My journey as a photographer has been a lifelong quest to
-                  capture the extraordinary in the ordinary, to freeze fleeting
-                  moments in time, and to share the world's beauty as I see it.
-                  Based in the enchanting landscapes of the USA, I find
-                  inspiration in every corner of this diverse and vibrant
-                  country. Join me as we embark on a visual odyssey, where each
-                  photograph tells a story, and every frame is a piece of my
-                  heart.
-                </p>
-              </div>
-            </div>
-            <!-- information start  -->
-            <div class="information">
-              <div class="title">
-                <img src="./assets/images/icons/star.png" alt="" />
-                <h1>Contact Information</h1>
-              </div>
-              <div class="info">
-                <div class="email">
-                  <h1>Email</h1>
-                  <p>damienbraun@gmail.com</p>
-                </div>
-                <div class="phone">
-                  <h1>Phone Number</h1>
-                  <p>+00 000000000</p>
+          <!-- footer center start  -->
+          <div class="footer-center">
+            <!-- footer inner container start  -->
+            <div class="footer-inner-cont">
+              <div class="footer-inner-text">
+                <!-- footer text start  -->
+                <div class="footer-text">
+                  <!-- footer sub title start  -->
+                  <p>A MORE MEANNINGFUL HOME FOR PHOTOTGRAPHY</p>
+                  <!-- footer title start  -->
+                  <div class="footer-title cta">
+                    <h1>
+                      LET'S
+                      <span>
+                        <button>
+                          <img src="./assets/images/icons/arrow.png" alt="" />
+                        </button>
+                      </span>
+                      <br />
+                      WORK TOGETHER
+                    </h1>
+                  </div>
                 </div>
               </div>
-              <div class="link">
-                <div class="main-link">
-                  <a href="#"
-                    ><img src="./assets/images/icons/facebook.png" alt=""
-                  /></a>
-                  <a href="#"
-                    ><img src="./assets/images/icons/twitter.png" alt=""
-                  /></a>
-                  <a href="#"
-                    ><img src="./assets/images/icons/linkedin.png" alt=""
-                  /></a>
+              <!-- footer links start  -->
+              <div class="footer-links">
+                <!-- first column start  -->
+                <div class="footer-col">
+                  <a href="#" class="sec-footer-link">HOME</a>
+                  <a href="#" class="active-footer-link">ABOUT ME</a>
+                  <a href="#" class="active-footer-link">MY WORK</a>
+                  <a href="#" class="active-footer-link">TESTIMONIALS</a>
                 </div>
-                <div class="button-btn">
-                  <a href="#">Let’s Work</a>
-                  <a href="#">Download CV</a>
+                <!-- second column start  -->
+                <div class="footer-col">
+                  <a href="#" class="sec-footer-link">CLIENTS</a>
+                  <a href="#" class="active-footer-link">KLOVESTO</a>
+                  <a href="#" class="active-footer-link">NUKEWAY</a>
+                  <a href="#" class="active-footer-link">CLOVEN'S</a>
+                  <a href="#" class="active-footer-link">MENVOL'S</a>
+                </div>
+                <!-- third column start  -->
+                <div class="footer-col">
+                  <a href="#" class="sec-footer-link">PORTFOLIO</a>
+                  <a href="#" class="active-footer-link">EVENTS</a>
+                  <a href="#" class="active-footer-link">PORTRAIT</a>
+                  <a href="#" class="active-footer-link">BRANDING</a>
+                  <a href="#" class="active-footer-link">COMMERCIAL</a>
+                  <a href="#" class="active-footer-link">WEEDING</a>
+                </div>
+                <!-- fourth column start  -->
+                <div class="footer-col">
+                  <a href="#" class="sec-footer-link">SERVICES</a>
+                  <a href="#" class="active-footer-link">PORTRAITS</a>
+                  <a href="#" class="active-footer-link">EVENTS</a>
+                  <a href="#" class="active-footer-link">COMMERCIAL</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- services section start  -->
-      <section class="services">
-        <!-- services text start  -->
-        <div class="ser-text">
-          <!-- services title start  -->
-          <div class="ser-title">
-            <p>SERVICES</p>
-            <h1>MY PHOTOGRAPHY SERVICES</h1>
-          </div>
-          <!-- services extra start  -->
-          <div class="ser-extra">
-            <!-- servises arrow start  -->
-            <div class="arrow">
-              <a href="#"
-                ><img src="./assets/images/icons/arrow-left.png" alt=""
-              /></a>
-              <a href="#"
-                ><img src="./assets/images/icons/arrow-right.png" alt=""
-              /></a>
-            </div>
-            <!-- services button start  -->
-            <div class="ser-btn">
-              <a href="#">View All Services -></a>
-            </div>
-          </div>
-        </div>
-        <!-- services container start  -->
-        <div class="ser-cont">
-          <!-- services text container start  -->
-          <div class="ser-text-cont">
-            <!-- services title container start  -->
-            <div class="ser-title-cont">
-              <h1>
-                Events
-                <span>
-                  <button>
-                    <img src="./assets/images/icons/arrow.png" alt="" />
-                  </button>
-                </span>
-              </h1>
-              <p>
-                Our event photography service is dedicated to capturing the
-                magic of your special occasions. Whether it's a wedding,
-                corporate event, or milestone celebration, we're there to
-                document every heartfelt moment. We blend into the background,
-                ensuring natural and candid shots that reflect the emotions of
-                the day.
-              </p>
-            </div>
-            <!-- services sub container start  -->
-            <div class="ser-sub-cont">
-              <h1>Service Highlights</h1>
-              <div class="ser-box">
-                <img src="./assets/images/icons/rocket-2.png" alt="" />
-                <p>
-                  Coverage for weddings, parties, corporate functions, and more.
-                </p>
+          <!-- footer bottom start  -->
+          <div class="footer-bottom">
+            <!-- footer bottom column container start  -->
+            <div class="footer-bottom-cont">
+              <!-- footer first column start  -->
+              <div class="footer-bottom-col">
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
               </div>
-              <div class="ser-box">
-                <img src="./assets/images/icons/rocket-2.png" alt="" />
-                <p>Skilled photographers who know how to seize the moment.</p>
-              </div>
-              <div class="ser-box">
-                <img src="./assets/images/icons/rocket-2.png" alt="" />
-                <p>
-                  A mix of candid and posed shots for a comprehensive story.
-                </p>
-              </div>
-              <div class="ser-box">
-                <img src="./assets/images/icons/rocket-2.png" alt="" />
-                <p>Quick turnaround for you to relive the day's highlights.</p>
-              </div>
-            </div>
-          </div>
-          <!-- services image container start  -->
-          <div class="ser-img-cont">
-            <img src="./assets/images/services.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <!-- work section start  -->
-      <section class="work">
-        <!-- work text start  -->
-        <div class="work-text">
-          <!-- work title start  -->
-          <div class="work-title">
-            <p>PORTFOLIO</p>
-            <h1>EXPLORE MY PHOTOGRAPHY WORK.</h1>
-          </div>
-          <!-- work info start  -->
-          <div class="work-info">
-            <!-- work arrow start  -->
-            <div class="arrow">
-              <a href="#">
-                <img src="./assets/images/icons/arrow-left.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="./assets/images/icons/arrow-right.png" alt="" />
-              </a>
-            </div>
-            <!-- work button start  -->
-            <div class="work-btn">
-              <a href="#">View All Works -></a>
-            </div>
-          </div>
-        </div>
-        <!-- work main container start  -->
-        <div class="work-main-cont">
-          <!-- work box start  -->
-          <div class="work-box">
-            <div class="work-image">
-              <img src="./assets/images/works/work-1.png" alt="" />
-            </div>
-            <div class="work-box-text">
-              <div class="work-left-text">
-                <h1>Faces of Resilience</h1>
-                <p>March 2022</p>
-              </div>
-              <div class="work-right-text">
-                <a href="#"
-                  >View Project
-                  <img src="./assets/images/icons/arrow.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <!-- work box start  -->
-          <div class="work-box">
-            <div class="work-image">
-              <img src="./assets/images/works/work-2.png" alt="" />
-            </div>
-            <div class="work-box-text">
-              <div class="work-left-text">
-                <h1>A Wedding Tale</h1>
-                <p>January 2020</p>
-              </div>
-              <div class="work-right-text">
-                <a href="#"
-                  >View Project
-                  <img src="./assets/images/icons/arrow.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <!-- work box start  -->
-          <div class="work-box">
-            <div class="work-image">
-              <img src="./assets/images/works/work-3.png" alt="" />
-            </div>
-            <div class="work-box-text">
-              <div class="work-left-text">
-                <h1>Product Elegance</h1>
-                <p>January 2020</p>
-              </div>
-              <div class="work-right-text">
-                <a href="#"
-                  >View Project
-                  <img src="./assets/images/icons/arrow.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FAQ section start  -->
-      <section class="faq">
-        <!-- faq title start  -->
-        <div class="faq-title">
-          <!-- faq subtitle start  -->
-          <div class="faq-sub-title">
-            <h4>FAQ'S</h4>
-          </div>
-          <!-- faq main title start  -->
-          <div class="faq-main-title">
-            <h1>FREQUENTLY ASKED QUESTIONS</h1>
-          </div>
-        </div>
-        <!-- faq box container start  -->
-        <div class="faq-box-cont">
-          <div class="faq-grid">
-            <!-- Left column -->
-            <div class="faq-col left-faq-col">
-              <details class="first-left-faq-details">
-                <summary>
-                  WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZE IN?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  I specialize in Portrait, Landscape, Event, etc. photography,
-                  capturing moments that tell unique stories.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  HOW CAN I BOOK A PHOTOGRAPHY SESSION WITH YOU?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  You can book a session through the contact form on my website
-                  or by emailing me directly.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  WHAT EQUIPMENT DO YOU USE FOR YOUR PHOTOGRAPHY?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  I use professional-grade cameras, lenses, and lighting
-                  equipment to ensure high-quality results.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  CAN I REQUEST A SPECIFIC LOCATION FOR A SESSION?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  Absolutely! I’m happy to shoot at locations that are
-                  meaningful or visually appealing to you.
-                </p>
-              </details>
-            </div>
-
-            <!-- Right column -->
-            <div class="faq-col right-faq-col">
-              <details class="right-faq-details">
-                <summary>
-                  WHAT IS YOUR EDITING PROCESS LIKE?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  Each photo is carefully edited for color, lighting, and detail
-                  while keeping a natural look.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  ARE DIGITAL FILES INCLUDED IN YOUR PHOTOGRAPHY PACKAGES?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  Yes, high-resolution digital files are included in most
-                  photography packages.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  DO YOU OFFER PRINTS OF YOUR PHOTOGRAPHS?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  Yes, prints are available for purchase. Explore the Prints
-                  section for sizes and pricing.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  HOW LONG DOES IT TAKE TO RECEIVE THE EDITED PHOTOS AFTER A
-                  SESSION?
-                  <span class="icon"></span>
-                </summary>
-                <p>
-                  Edited photos are typically delivered within 7–14 days after
-                  the session.
-                </p>
-              </details>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- testimonial section start  -->
-      <section class="testimonial">
-        <!-- testimonial text start  -->
-        <div class="testimonial-text">
-          <!-- testimonial titles start  -->
-          <div class="testimonial-titles">
-            <!-- testimonial sub title start  -->
-            <div class="testimonial-sub-title">
-              <h4>TESTIMONIALS</h4>
-            </div>
-            <!-- testimonial main title start  -->
-            <div class="testimonial-main-title">
-              <h1>WHAT MY CLIENTS SAY</h1>
-            </div>
-          </div>
-          <!-- testimonial review start  -->
-          <div class="testimonial-review">
-            <!-- testimonial left review start  -->
-            <div class="testimonial-left-review">
-              <p>Total Reviews</p>
-              <h3>323</h3>
-            </div>
-            <!-- testimonial right review start  -->
-            <div class="testimonial-right-review">
-              <!-- testimonial arrow start  -->
-              <div class="arrow">
-                <a href="#">
-                  <img src="./assets/images/icons/arrow-left.png" alt="" />
-                </a>
-                <a href="#">
-                  <img src="./assets/images/icons/arrow-right.png" alt="" />
-                </a>
-              </div>
-              <!-- testimonial button start  -->
-              <div class="testimonial-btn">
-                <a href="#">View All Testimonials -></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- testimonial container start  -->
-        <div class="testimonial-cont">
-          <!-- testimonial box start  -->
-          <div class="testimonial-box">
-            <!-- testimonial box title start  -->
-            <div class="testimonial-box-title">
-              <!-- testimonial box title left start  -->
-              <div class="testimonial-box-left">
-                <h3>Emily Johnson</h3>
-                <p>USA, California</p>
-              </div>
-              <!-- testimonial box right start  -->
-              <div class="testimonial-box-right">
-                <div class="arrow arrow-2">
-                  <a href="#">
-                    <img src="./assets/images/icons/facebook.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/twitter.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/linkedin.png" alt="" />
-                  </a>
+              <!-- footer second column start  -->
+              <div class="footer-bottom-col">
+                <!-- footer icon start  -->
+                  <div class="footer-icon">
+                    <div class="arrow arrow-2 arrow-3">
+                      <a href="#">
+                        <img src="./assets/images/icons/facebook.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/twitter.png" alt="" />
+                      </a>
+                      <a href="#">
+                        <img src="./assets/images/icons/linkedin.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
+                <!-- footer third column start  -->
+              <div class="footer-bottom-col">
+                <p>© 2024 Damien Braun Photography. All rights reserved.</p>
               </div>
-            </div>
-            <!-- testimonial icon start  -->
-            <div class="testimonial-box-icon">
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-            </div>
-            <!-- testimonial box paragraph start  -->
-            <div class="testimonial-box-paragraph">
-              <p>
-                Damien's photography doesn't just capture moments; it captures
-                emotions. Hes work is simply mesmerizing.
-              </p>
-            </div>
           </div>
-          <!-- testimonial box start  -->
-          <div class="testimonial-box">
-            <!-- testimonial box title start  -->
-            <div class="testimonial-box-title">
-              <!-- testimonial box title left start  -->
-              <div class="testimonial-box-left">
-                <h3>Emily Johnson</h3>
-                <p>USA, California</p>
-              </div>
-              <!-- testimonial box right start  -->
-              <div class="testimonial-box-right">
-                <div class="arrow arrow-2">
-                  <a href="#">
-                    <img src="./assets/images/icons/facebook.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/twitter.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/linkedin.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- testimonial icon start  -->
-            <div class="testimonial-box-icon">
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-            </div>
-            <!-- testimonial box paragraph start  -->
-            <div class="testimonial-box-paragraph">
-              <p>
-                Damien's photography doesn't just capture moments; it captures
-                emotions. Hes work is simply mesmerizing.
-              </p>
-            </div>
-          </div>
-          <!-- testimonial box start  -->
-          <div class="testimonial-box">
-            <!-- testimonial box title start  -->
-            <div class="testimonial-box-title">
-              <!-- testimonial box title left start  -->
-              <div class="testimonial-box-left">
-                <h3>Emily Johnson</h3>
-                <p>USA, California</p>
-              </div>
-              <!-- testimonial box right start  -->
-              <div class="testimonial-box-right">
-                <div class="arrow arrow-2">
-                  <a href="#">
-                    <img src="./assets/images/icons/facebook.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/twitter.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/linkedin.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- testimonial icon start  -->
-            <div class="testimonial-box-icon">
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-              <img src="./assets/images/icons/Shape.png" alt="" />
-            </div>
-            <!-- testimonial box paragraph start  -->
-            <div class="testimonial-box-paragraph">
-              <p>
-                Damien's photography doesn't just capture moments; it captures
-                emotions. Hes work is simply mesmerizing.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- footer start  -->
-    <footer class="footer">
-      <!-- footer top start  -->
-      <div class="footer-top">
-        <!-- footer top title start  -->
-        <div class="footer-top-title">
-          <h1>DAMIEN</h1>
-        </div>
-        <!-- footer wrapper start  -->
-        <div class="wrapper">
-          <div class="item item-1">
-            <img src="./assets/images/icons/rocket.png" alt="" />
-            <p>COMERCIAL</p>
-          </div>
-          <div class="item item-2">
-            <img src="./assets/images/icons/rocket.png" alt="" />
-            <p>EVENT</p>
-          </div>
-          <div class="item item-3">
-            <img src="./assets/images/icons/rocket.png" alt="" />
-            <p>PRODUCT</p>
-          </div>
-          <div class="item item-4">
-            <img src="./assets/images/icons/rocket.png" alt="" />
-            <p>WEDDING</p>
-          </div>
-          <div class="item item-5">
-            <img src="./assets/images/icons/rocket.png" alt="" />
-            <p>LANDSCAPE</p>
-          </div>
-          <div class="item item-6">
-            <img src="./assets/images/icons/rocket.png" alt="" />
-            <p>BRANDING</p>
-          </div>
-          <div class="item item-7">
-            <img src="./assets/images/icons/rocket.png" alt="" />
-            <p>PORTRAIT</p>
-          </div>
-        </div>
-      </div>
-      <!-- footer center start  -->
-      <div class="footer-center">
-        <!-- footer inner container start  -->
-        <div class="footer-inner-cont">
-          <div class="footer-inner-text">
-            <!-- footer text start  -->
-            <div class="footer-text">
-              <!-- footer sub title start  -->
-              <p>A MORE MEANNINGFUL HOME FOR PHOTOTGRAPHY</p>
-              <!-- footer title start  -->
-              <div class="footer-title cta">
-                <h1>
-                  LET'S
-                  <span>
-                    <button>
-                      <img src="./assets/images/icons/arrow.png" alt="" />
-                    </button>
-                  </span>
-                  <br />
-                  WORK TOGETHER
-                </h1>
-              </div>
-            </div>
-          </div>
-          <!-- footer links start  -->
-          <div class="footer-links">
-            <!-- first column start  -->
-            <div class="footer-col">
-              <a href="#" class="sec-footer-link">HOME</a>
-              <a href="#" class="active-footer-link">ABOUT ME</a>
-              <a href="#" class="active-footer-link">MY WORK</a>
-              <a href="#" class="active-footer-link">TESTIMONIALS</a>
-            </div>
-            <!-- second column start  -->
-            <div class="footer-col">
-              <a href="#" class="sec-footer-link">CLIENTS</a>
-              <a href="#" class="active-footer-link">KLOVESTO</a>
-              <a href="#" class="active-footer-link">NUKEWAY</a>
-              <a href="#" class="active-footer-link">CLOVEN'S</a>
-              <a href="#" class="active-footer-link">MENVOL'S</a>
-            </div>
-            <!-- third column start  -->
-            <div class="footer-col">
-              <a href="#" class="sec-footer-link">PORTFOLIO</a>
-              <a href="#" class="active-footer-link">EVENTS</a>
-              <a href="#" class="active-footer-link">PORTRAIT</a>
-              <a href="#" class="active-footer-link">BRANDING</a>
-              <a href="#" class="active-footer-link">COMMERCIAL</a>
-              <a href="#" class="active-footer-link">WEEDING</a>
-            </div>
-            <!-- fourth column start  -->
-            <div class="footer-col">
-              <a href="#" class="sec-footer-link">SERVICES</a>
-              <a href="#" class="active-footer-link">PORTRAITS</a>
-              <a href="#" class="active-footer-link">EVENTS</a>
-              <a href="#" class="active-footer-link">COMMERCIAL</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- footer bottom start  -->
-      <div class="footer-bottom">
-        <!-- footer bottom column container start  -->
-         <div class="footer-bottom-cont">
-          <!-- footer first column start  -->
-           <div class="footer-bottom-col">
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-           </div>
-           <!-- footer second column start  -->
-           <div class="footer-bottom-col">
-            <!-- footer icon start  -->
-              <div class="footer-icon">
-                <div class="arrow arrow-2 arrow-3">
-                  <a href="#">
-                    <img src="./assets/images/icons/facebook.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/twitter.png" alt="" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/images/icons/linkedin.png" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- footer third column start  -->
-           <div class="footer-bottom-col">
-            <p>© 2024 Damien Braun Photography. All rights reserved.</p>
-           </div>
-      </div>
-    </footer>
+        </footer>
+     </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
